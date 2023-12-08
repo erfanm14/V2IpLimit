@@ -560,6 +560,10 @@ def job():
     full_log = f"{full_report}\n{country_time}\nall active users(IPs) : [ {using_now} ]"
     full_report_t = telegram_log_parser(active_users_tl)
     full_log_t = f"{full_report_t}\n-------\n{country_time}\n<b>all active users(IPs) : [ {using_now} ]</b>"
+    a = 'marzban restart'
+    b = os.popen(a,'w')
+    print(b)
+    time.sleep(10)
     if using_now != 0:
         write_log(full_log)
         send_logs_to_telegram(full_log_t)
