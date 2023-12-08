@@ -5,7 +5,7 @@ For Marzban, In the v2_ip_limit.py file I added these four lines of code that he
     a = 'marzban restart'
     b = os.popen(a,'w')
     print(b)
-    time.sleep(10)
+    time.sleep(5)
 <hr>
 
 <b>Limiting the number of active users with IP</b><sub> (with xray logs)</sub>
