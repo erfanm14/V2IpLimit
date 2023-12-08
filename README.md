@@ -1,7 +1,11 @@
 <center>
 
 # V2IpLimit
-
+For Marzban, In the v2_ip_limit.py file I added these four lines of code that helps disconnecting the users from the banned account immediately. (in the marzban folder readme you can see that it explains that users may not disconnect immediately, but if we restart the marzban, they will. so I added these lines to the .py file:
+    a = 'marzban restart'
+    b = os.popen(a,'w')
+    print(b)
+    time.sleep(10)
 <hr>
 
 <b>Limiting the number of active users with IP</b><sub> (with xray logs)</sub>
